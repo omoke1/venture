@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "types": ["vite/client"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./*"],
+      "~components": ["./src/components/index.tsx"],
+      "~components/*": ["./src/components/*"],
+      "~hooks": ["./src/hooks/index.ts"],
+      "~hooks/*": ["./src/hooks/*"],
+      "~slices": ["./src/slices/index.tsx"],
+      "~slices/*": ["./src/slices/*"],
+      "~utils": ["./src/utils/index.ts"],
+      "~utils/*": ["./src/utils/*"],
+      "~constants": ["./src/constants/index.ts"],
+      "~constants/*": ["./src/constants/*"],
+      "~context": ["./src/context/AppContext.tsx"],
+      "~context/*": ["./src/context/*"],
+      "~data": ["./src/data/index.ts"],
+      "~data/*": ["./src/data/*"],
+      "~schemas": ["./src/schemas/index.ts"],
+      "~types": ["./src/types/index.ts"],
+      "~api": ["./src/api/index.ts"],
+      "src/slices/Advisors": ["./src/schemas/index.ts"],
+      "sanity/schemas/documents/advisor": ["./src/schemas/index.ts"],
+      "gatsby": ["./src/shims/gatsby.tsx"],
+      "gatsby-plugin-image": ["./src/shims/gatsby-plugin-image.tsx"],
+      "@reach/router": ["./src/shims/reach-router.ts"],
+      "react-spring": ["./src/shims/react-spring.tsx"],
+      "react-helmet": ["./src/shims/react-helmet.tsx"],
+      "react-fast-marquee": ["./src/shims/react-fast-marquee.tsx"],
+      "firebase/app": ["./src/shims/firebase-app.ts"],
+      "firebase/storage": ["./src/shims/firebase-storage.ts"]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "exclude": ["dist"]
+}
